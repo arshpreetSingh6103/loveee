@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>For You ❤️</title>
 
 <style>
@@ -255,6 +256,85 @@ audio {
     transform: translateX(-50%);
   }
 }
+/* ================= MOBILE RESPONSIVENESS ================= */
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 1.6em;
+    padding: 0 10px;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  p {
+    font-size: 1em;
+    padding: 0 15px;
+  }
+
+  button {
+    padding: 12px 24px;
+    font-size: 15px;
+  }
+
+  .cards {
+    max-width: 100%;
+    gap: 12px;
+  }
+
+  .card {
+    width: 90%;
+    font-size: 0.95em;
+  }
+
+  .letter-container {
+    height: 60%;
+    padding: 18px;
+    font-size: 0.95em;
+  }
+
+  .letter-container p {
+    line-height: 24px;
+  }
+
+  .photo-track img {
+    height: 140px;   /* smaller for mobile */
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 1.4em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  .section {
+    padding-top: 20px;
+  }
+
+  .photo-track {
+    gap: 18px;
+    animation-duration: 25s; /* smoother on phones */
+  }
+
+  .heart {
+    width: 14px;
+    height: 14px;
+  }
+
+  .heart::before,
+  .heart::after {
+    width: 14px;
+    height: 14px;
+  }
+}
+
 
 </style>
 </head>
@@ -435,4 +515,3 @@ function openLetter() {
 
 </body>
 </html>
-
